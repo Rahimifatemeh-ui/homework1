@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Developer Summit 2026</title>
+</head>
+<body>
+
+    <header>
+        <h1>Global Developer Summit 2026</h1>
+        <p>Registration &amp; Workshop Schedule Portal</p>
+    </header>
+
+    <main>
+        <section id="registration">
+            <h2>Attendee Registration</h2>
+
+            <form action="/register" method="POST">
+
+                <p>
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="name" required>
+                </p>
+
+                <p>
+                    <label for="user-email">Email Address:</label>
+                    <input type="email" id="user-email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="track-select">Workshop Track:</label>
+                    <select id="track-select" name="track" required>
+                        <option value="">Choose a workshop</option>
+                        <option value="html">HTML &amp; Accessibility Lab</option>
+                        <option value="frontend">Creative Frontend Workshop</option>
+                        <option value="javascript">JavaScript for Beginners</option>
+                    </select>
+                </p>
+
+                <p>Attendance Mode:</p>
+
+                <input type="radio" id="mode-in-person"
+                       name="attendance-mode" value="in-person" checked>
+                <label for="mode-in-person">In-Person Attendance</label>
+
+                <input type="radio" id="mode-virtual"
+                       name="attendance-mode" value="virtual">
+                <label for="mode-virtual">Virtual Live Stream</label>
+
+                <p>
+                    <label for="special-requests">
+                        Special Requests:
+                    </label>
+                </p>
+
+                <textarea id="special-requests"
+                          name="notes" rows="4"></textarea>
+
+                <p>
+                    <input type="checkbox" id="terms-consent"
+                           name="terms" required>
+                    <label for="terms-consent">
+                        I agree to the conference Code of Conduct and Terms *
+                    </label>
+                </p>
+
+                <button type="submit">Complete Registration</button>
+
+            </form>
+        </section>
+
+        <section id="schedule-matrix">
+            <h2>Workshop Matrix &amp; Pricing</h2>
+
+            <table>
+                <caption>Workshop Schedule &amp; Track Pricing Matrix</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Time</th>
+                        <th scope="col">Session Topic</th>
+                        <th scope="col">Room</th>
+                        <th scope="col">Instructor</th>
+                        <th scope="col">Pricing</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">09:00 AM</th>
+                        <td>HTML &amp; Accessibility Lab</td>
+                        <td>Room A</td>
+                        <td>Anna Lee</td>
+                        <td>$40</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">10:30 AM</th>
+                        <td>Creative Frontend Workshop</td>
+                        <td>Room B</td>
+                        <td>David Clark</td>
+                        <td>$55</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">12:00 PM</th>
+                        <td>JavaScript for Beginners</td>
+                        <td>Room C</td>
+                        <td>Emma Wilson</td>
+                        <td>$45</td>
+                    </tr><tr>
+                        <th scope="row">02:00 PM</th>
+                        <td>Building Your First Web Project</td>
+                        <td>Room A</td>
+                        <td>Alex Martin</td>
+                        <td>$60</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="5">
+                            Note: All in-person tickets include breakfast,
+                            lunch, and lab equipment access.
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+</body>
+</html>

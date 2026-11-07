@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f3f8;
+    margin: 0;
+    padding: 50px 20px;
+}
+
+.event-card {
+    background-color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px #dce1e9;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #fde9e9;
+    color: #d83b40;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.event-card h2 {
+    color: #182238;
+    font-size: 38px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+.meta {
+    color: #78869b;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.desc {
+    color: #465267;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.btn-register {
+    background-color: #df355a;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    padding: 22px;
+    width: 100%;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-register:hover {
+    background-color: #c6282e;
+}
